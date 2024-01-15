@@ -1,0 +1,10 @@
+<header>
+    <script>
+    const userName = localStorage.getItem("userName");
+    if (userName) {
+      document.write(`<h2>Welcome, ${userName}!</h2>`);
+    } else {
+      document.write(`<h2>Welcome!</h2>`);
+    }
+  </script>
+</header>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Name and Hobby Form</title>
+    <script>
+      function submitForm() {
+        const name = document.getElementById("name").value;
+        const hobby = document.getElementById("hobby").value;
+        localStorage.setItem("userName", name);
+        localStorage.setItem("hobby", hobby);
+      }
+    </script>
+</head>
+<body>
+<h1>Enter your name and hobby:</h1>
+<form>
+    Name: <input type="text" id="name"><br>
+    Hobby: <input type="text" id="hobby"><br>
+    <input type="button" value="Submit" onclick="submitForm()">
+</form>
+</body>
+</html>
